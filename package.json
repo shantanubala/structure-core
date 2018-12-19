@@ -5,5 +5,14 @@
   "main": "index.js",
   "repository": "git@github.com:shantanubala/structure-core.git",
   "author": "Shantanu Bala <shantanu@sbala.org>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/node-gyp build",
+    "install": "./node_modules/.bin/node-gyp rebuild",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "nan": "^2.12.1",
+    "node-gyp": "^3.8.0"
+  }
 }
